@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!--*****************************************************************************
+Title: Sales Page
+Use: Provides information on available bikes
+Author: Brady Young
+School/Term: Southern Illinois University, Fall 2022
+Developed: Sep 09, 2022
+Tested: Sep 09, 2022; Passed on Edge and Chrome browsers.
+******************************************************************************-->
+    <meta charset="utf-8">
+    <title>Sales Page</title>
+    <link rel="icon" type="image/png" href="Images/bike.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="externalStylePage.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class ="Slick Nav Menu">
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="rentals.htm" >Rentals</a></li>
+                    <li><a href="sales.htm"  class="current"   >Sales</a></li>
+                    <li><a href="services.htm" >Services</a></li>
+                    <li><a href="contact.htm" >Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Includes the video that autoplays-->
+    <div class="centered">
+        <video controls autoplay>
+            <source src="VideosAndAudio/Youngs%20Bicycle%20Shop.mp4">
+        </video>
+    </div>
+
+    <div class="bodyColumn">
+        <div>
+            <header class="headerColumn">
+                <h1>Bikes for Sale</h1>
+                <h2>For information on these bikes, please watch the above video</h2>
+            </header>
+            <!--Div section that includes the left and right column-->
+            <div id="Left_and_Right_Column">
+                <!--Left column contents, two different bikes for sale-->
+                <main class="leftColumn">
+                    <div>
+                        <h1 class="headerColumnClass">Co-op Cycles CTY 1.1 STEP $449</h1>
+
+                        <img src="Images/coop.jpg" alt="Co-op Cycles CTY 1.1" class="ImageColumn">
+
+                        <p class="paragraphColumnClass">
+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h1>Liv Alight 2 Disc $750</h1>
+
+                        <img src="Images/Alight.jpg" alt="Liv Alight 2 Disc" class="ImageColumn">
+
+                        <p class="paragraphColumnClass">
+
+                        </p>
+                    </div>
+
+                </main>
+
+                <!--Right column contents, two different bikes for sale-->
+                <aside>
+                    <div>
+                        <h2 class="headerColumnClass">Electra Cruiser 1 $400</h2>
+                        <img src="Images/Cruiser.png" alt="Electra Cruiser 1 Step-Through Bike" class="ImageColumn">
+
+                        <p class="paragraphColumnClass">
+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="headerColumnClass">Schwinn Coston DX Electric $2000</h2>
+
+                        <img src="Images/Schwinn.jpg" alt="Schwinn Coston DX Electric Bike" class="ImageColumn">
+
+                        <p class="paragraphColumnClass">
+
+                        </p>
+                    </div>
+                </aside>
+            </div>
+
+            <!--Bottom of the columns, containing sales information-->
+            <footer class="columnFooter">
+                <h2>Bike Sales Information</h2>
+                <p>All bike sales come with a limited 30-day warranty, and a 30-day money-back guarantee. <br> <br>Do you have any questions
+                    about any of these bikes? Reach out to us anytime from <time datetime="08:00">8:00</time> to <time datetime="17:00">5:00</time>
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

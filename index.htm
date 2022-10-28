@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!--*****************************************************************************
+    Title: Bicycle Shop Web Page
+    Use: Basic bicycle shop web page, featuring information about the shop, and bikes that are for sale
+    Author: Braden Young
+    School/Term: Southern Illinois University, Fall 2022
+    Developed: Aug 25, 2022
+    Tested: Oct 12, 2022; Passed on Edge, Chrome, and Safari browsers.
+    ******************************************************************************-->
+    <meta charset="utf-8">
+    <title>Young's Bicycle Shop</title>
+    <link rel="icon" type="image/png" href="Images/bike.png">
+    <meta name="description" content="Young's family owned and operated local bicycle shop">
+    <meta name="keywords" content="bike shop, bikes, bike, bicycle, ebike, mountain bike">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Links the external CSS stylesheet-->
+    <link rel="stylesheet" href="externalStylePage.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class ="Slick Nav Menu">
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="index.htm"  class="current"  >Home</a></li>
+                    <li><a href="rentals.htm" >Rentals</a></li>
+                    <li><a href="sales.htm" >Sales</a></li>
+                    <li><a href="services.htm" >Services</a></li>
+                    <li><a href="contact.htm" >Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="centeredNew">
+            <h1>Young's Bicycles</h1>
+            <h2>Quality Bikes for all</h2>
+        </div>
+    </header>
+    <main>
+
+        <div class="audio">
+            <!--Audio that loops and autoplays-->
+            <audio id="audio" controls loop autoplay>
+                <source src="VideosAndAudio/ttsMP3.com_VoiceText_2022-10-6_16_49_7.mp3">
+            </audio>
+        </div>
+
+        <!--Image displayed of mountain bike riders-->
+        <div id="ImageBody">
+            <figure>
+                <p id="Image"></p>
+                <figcaption>Extreme Mountain Bike Riding</figcaption>
+            </figure>
+        </div>
+
+
+        <div id="test">
+            <p>
+                Young's bicycle shop is a family-owned and operated store, that has been around for over 27 years.
+                We have always offered low and competitive pricing since we opened, and we still do to this day!
+                If you are interested in getting yourself a bike, either browse our selection online or stop in
+                and see us any day from <time datetime="08:00">8:00</time> to <time datetime="17:00">5:00</time> at <strong>247 Bike Rd. Mount Vernon, Illinois</strong>
+            </p>
+        </div>
+
+
+        <!--Unordered list of bike inventory-->
+        <p> We have a rapidly changing inventory, but we have many types of bikes that we keep in stock at all times.<br>
+        Including:
+        </p>
+        <ul>
+            <li>Road Bikes</li>
+            <li>Mountain Bikes</li>
+            <li>BMX Bikes</li>
+            <li>Folding Bikes</li>
+            <li>Electric Bikes</li>
+        </ul>
+    </main>
+
+    <!--Includes contact information including the address, phone number, and a link to the school website-->
+    <footer class="footerClass">
+        <p>
+            Do you have any questions or concerns?<br><strong>Give us a call at <a href="tel:123-555-7890">123-555-7890</a></strong>
+            <br> 247 Bike Rd. Mount Vernon, Illinois <br>
+            <a href="https://siu.edu/">SIU school website</a>
+        </p>
+    </footer>
+
+</body>
+</html>
